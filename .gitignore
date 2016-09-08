@@ -1,0 +1,10 @@
+# Tests
+.cache
+.coverage
+.tox
+htmlcov
+
+# Packaging & Distribution
+*.egg-info
+build
+dist
