@@ -1,5 +1,5 @@
 """Test text processing utilities"""
-from gybberysh.utils import is_consonant, is_vowel
+from gybberysh.utils import is_consonant, is_consonant_or_y, is_vowel
 
 
 def test_ascii_is_consonant():
@@ -30,6 +30,14 @@ def test_accented_is_consonant():
     """Check if an accented letter is a consonant"""
     assert is_consonant('ñ')
     assert is_consonant('ś')
+
+
+def test_ascii_is_consonant_or_y():
+    """Check if an ASCII letter is a consonantor a 'y'"""
+    assert is_consonant_or_y('m')
+    assert is_consonant_or_y('n')
+    assert is_consonant_or_y('Y')
+    assert is_consonant_or_y('y')
 
 
 def test_ascii_is_vowel():

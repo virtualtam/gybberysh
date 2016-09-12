@@ -1,5 +1,5 @@
 """Test Javanais text conversion"""
-from gybberysh.javanais import javanais
+from gybberysh.games import javanais
 
 
 def test_empty_text():

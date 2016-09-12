@@ -41,7 +41,9 @@ setup(
     packages=find_packages(exclude=['tests.*', 'tests']),
     entry_points={
         'console_scripts': [
-            'javanais = gybberysh.javanais:main',
+            'infix = gybberysh.games:generic_infix_entrypoint',
+            'javanais = gybberysh.games:javanais_entrypoint',
+            'oppish = gybberysh.games:oppish_entrypoint',
         ],
     },
     install_requires=[],

@@ -9,4 +9,10 @@ Gybberysh
    :target: https://pypi.python.org/pypi/gybberysh
    :alt: PyPI package
 
-Tired of intelligible text?
+Tired of intelligible text? Come along and play with the available
+language games!
+
+Available transformations:
+
+- Javanais
+- Oppish
