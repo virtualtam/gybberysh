@@ -14,5 +14,6 @@ language games!
 
 Available transformations:
 
+- Gibberish
 - Javanais
 - Oppish

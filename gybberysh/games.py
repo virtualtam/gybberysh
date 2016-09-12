@@ -3,9 +3,15 @@ import argparse
 
 from .infix import infix_text
 
+GIBBERISH = "iddig"
 JAVANAIS = "av"
 OPPISH = "op"
 INFIXES = [JAVANAIS, "ab", "ad", "al", OPPISH]
+
+
+def gibberish(text):
+    """Convert text to Gibberish"""
+    return infix_text(text, GIBBERISH)
 
 
 def javanais(text):
@@ -28,6 +34,19 @@ def oppish(text):
     return infix_text(text, OPPISH)
 
 
+def gibberish_entrypoint():
+    """Gibberish entrypoint"""
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        'text',
+        type=str,
+        nargs='+',
+        help="text to convert to Gibberish"
+    )
+    args = parser.parse_args()
+    print(gibberish(" ".join(args.text)))
+
+
 def javanais_entrypoint():
     """Javanais entrypoint"""
     parser = argparse.ArgumentParser()
@@ -48,7 +67,7 @@ def oppish_entrypoint():
         'text',
         type=str,
         nargs='+',
-        help="text to convert to Javanais"
+        help="text to convert to Oppish"
     )
     args = parser.parse_args()
     print(oppish(" ".join(args.text)))
@@ -61,7 +80,7 @@ def generic_infix_entrypoint():
         'text',
         type=str,
         nargs='+',
-        help="text to convert to Javanais"
+        help="text to convert using an infixed syllable"
     )
     parser.add_argument(
         '-i',
