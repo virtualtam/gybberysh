@@ -17,3 +17,4 @@ Available transformations:
 - Gibberish
 - Javanais
 - Oppish
+- Pig Latin

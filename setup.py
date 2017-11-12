@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-Setup script for gybberysh
-"""
+"""Setup script for gybberysh"""
 import codecs
 import os
 import re
@@ -45,6 +43,7 @@ setup(
             'infix = gybberysh.games:generic_infix_entrypoint',
             'javanais = gybberysh.games:javanais_entrypoint',
             'oppish = gybberysh.games:oppish_entrypoint',
+            'piglatin = gybberysh.pig_latin:pig_latin_entrypoint',
         ],
     },
     install_requires=[],
