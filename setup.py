@@ -8,17 +8,13 @@ from setuptools import find_packages, setup
 
 
 def get_long_description():
-    """
-    Reads the main README.rst to get the program's long description
-    """
+    """Reads the main README.rst to get the program's long description"""
     with codecs.open('README.rst', 'r', 'utf-8') as f_readme:
         return f_readme.read()
 
 
 def get_program_metadata(attribute):
-    """
-    Reads program metadata from the main package's __init__
-    """
+    """Reads program metadata from the main package's __init__"""
     with open(os.path.join('gybberysh', '__init__.py'), 'r') as f_init:
         return re.search(
             r'^__{attr}__\s*=\s*[\'"]([^\'"]*)[\'"]'.format(attr=attribute),
@@ -57,4 +53,5 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
     ])

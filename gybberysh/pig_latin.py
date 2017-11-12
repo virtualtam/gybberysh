@@ -12,10 +12,10 @@ Extended rules:
 - 'y' behaves as a consonant when it is followed by a vowel
   "you" => "ou-y-ay"
 
-Notes:
+Additional notes:
 - some conversions are ambiguous (unless explicited with hyphens):
-  "ear" => "ear-yay"
-  "year" => "ear-y-ay"
+  - "ear" => "ear-yay"
+  - "year" => "ear-y-ay"
 """
 import argparse
 import re
