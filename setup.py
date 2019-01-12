@@ -30,7 +30,7 @@ setup(
     author=get_program_metadata('author'),
     author_email='virtualtam@flibidi.net',
     license='MIT',
-    url='https://github.com/virtualtam/botibal',
+    url='https://github.com/virtualtam/gybberysh',
     keywords="gibberish pig latin slang javanais largonji",
     packages=find_packages(exclude=['tests.*', 'tests']),
     entry_points={
@@ -51,7 +51,7 @@ setup(
         'Natural Language :: English',
         'Operating System :: POSIX :: Linux',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
     ])
