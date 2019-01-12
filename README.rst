@@ -9,6 +9,23 @@ Gybberysh
    :target: https://pypi.python.org/pypi/gybberysh
    :alt: PyPI package
 
+::
+
+    _________________________________________
+   ( Ernardbay eadingray ormfay Atwhay isyay )
+   ( ouryay othermay aidenmay amenay Atwhay  )
+   ( erhay irstfay amenay Iyay ustjay ewknay )
+   ( erhay asyay Amay Atthay avehay otay     )
+   ( oday Ibblesscray ontoyay ethay ormfay   )
+   ( Amayossiblypay eceasedday               )
+    -----------------------------------------
+           o   ^__^
+            o  (oo)\_______
+               (__)\       )\/\
+                   ||----w |
+                   ||     ||
+
+
 Tired of intelligible text? Come along and play with the available
 language games!
 
@@ -18,3 +35,4 @@ Available transformations:
 - Javanais
 - Oppish
 - Pig Latin
+- Upsidown

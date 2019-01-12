@@ -38,6 +38,7 @@ setup(
             'gibberish = gybberysh.games:gibberish_entrypoint',
             'infix = gybberysh.games:generic_infix_entrypoint',
             'javanais = gybberysh.games:javanais_entrypoint',
+            'upsidown = gybberysh.games:upsidown_entrypoint',
             'oppish = gybberysh.games:oppish_entrypoint',
             'piglatin = gybberysh.pig_latin:pig_latin_entrypoint',
         ],

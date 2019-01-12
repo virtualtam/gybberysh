@@ -8,6 +8,19 @@ JAVANAIS = "av"
 OPPISH = "op"
 INFIXES = [JAVANAIS, "ab", "ad", "al", OPPISH]
 
+UPSIDOWN = [
+    ('a', 'g'),
+    ('b', 'p'),
+    ('d', 'q'),
+    ('f', 't'),
+    ('m', 'w'),
+    ('n', 'u'),
+    ('s', 'z'),
+    ('A', 'V'),
+    ('M', 'W'),
+    ('S', 'Z'),
+]
+
 
 def gibberish(text):
     """Convert text to Gibberish"""
@@ -34,6 +47,29 @@ def oppish(text):
     return infix_text(text, OPPISH)
 
 
+def upsidown(text):
+    """Turn letters upside-down"""
+    if not text:
+        return ""
+
+    uptext = ""
+
+    for char in text:
+        upchar = char
+
+        for ch1, ch2 in UPSIDOWN:
+            if char == ch1:
+                upchar = ch2
+                break
+            elif char == ch2:
+                upchar = ch1
+                break
+
+        uptext += upchar
+
+    return uptext
+
+
 def gibberish_entrypoint():
     """Gibberish entrypoint"""
     parser = argparse.ArgumentParser()
@@ -58,6 +94,19 @@ def javanais_entrypoint():
     )
     args = parser.parse_args()
     print(javanais(" ".join(args.text)))
+
+
+def upsidown_entrypoint():
+    """Miwwow entrypoint"""
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        'text',
+        type=str,
+        nargs='+',
+        help="text to upsidown"
+    )
+    args = parser.parse_args()
+    print(upsidown(" ".join(args.text)))
 
 
 def oppish_entrypoint():
