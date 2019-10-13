@@ -40,5 +40,7 @@ def test_qu():
 
 def test_convert_sentence():
     """Pig latinize full sentences"""
-    assert pig_latin("The quick brown fox jumps over the lazy dog") == \
-        "Ethay ickquay ownbray oxfay umpsjay overyay ethay azylay ogday"
+    assert (
+        pig_latin("The quick brown fox jumps over the lazy dog")
+        == "Ethay ickquay ownbray oxfay umpsjay overyay ethay azylay ogday"
+    )

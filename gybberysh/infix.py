@@ -23,19 +23,20 @@ def infix_word(word, infix):
     new_word = ""
 
     for index, char in enumerate(word):
-        if (previous.lower(), char.lower()) == ('q', 'u'):
+        if (previous.lower(), char.lower()) == ("q", "u"):
             new_word += char + infix
 
-        elif (len(word) > 2 and
-              word[index:].lower() in ('e', 'es') and
-              is_consonant_or_y(previous)):
+        elif (
+            len(word) > 2
+            and word[index:].lower() in ("e", "es")
+            and is_consonant_or_y(previous)
+        ):
             new_word += char
 
-        elif char.lower() == 'y' and index == 0:
+        elif char.lower() == "y" and index == 0:
             new_word += char
 
-        elif (is_vowel(char) and
-              (index == 0 or is_consonant_or_y(previous))):
+        elif is_vowel(char) and (index == 0 or is_consonant_or_y(previous)):
             if char.isupper():
                 new_word += infix.capitalize() + char.lower()
             else:

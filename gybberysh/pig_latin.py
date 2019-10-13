@@ -33,7 +33,7 @@ def pig_latin_word(word):
 
     new_word = ""
 
-    if len(word) > 1 and word[0].lower() == 'y' and is_vowel(word[1]):
+    if len(word) > 1 and word[0].lower() == "y" and is_vowel(word[1]):
         new_word = word[1:] + LONG_SUFFIX
 
     elif is_vowel(word[0]):
@@ -46,8 +46,8 @@ def pig_latin_word(word):
         previous = ""
 
         for index, char in enumerate(word):
-            if (previous, char) == ('q', 'u'):
-                new_word = word[index + 1:] + word[:index + 1] + SHORT_SUFFIX
+            if (previous, char) == ("q", "u"):
+                new_word = word[index + 1 :] + word[: index + 1] + SHORT_SUFFIX
                 break
 
             if is_vowel(char):
@@ -84,10 +84,7 @@ def pig_latin_entrypoint():
     """Pig Latin entrypoint"""
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        'text',
-        type=str,
-        nargs='+',
-        help="text to convert to Pig Latin"
+        "text", type=str, nargs="+", help="text to convert to Pig Latin"
     )
     args = parser.parse_args()
     print(pig_latin(" ".join(args.text)))
