@@ -19,6 +19,7 @@ from .utils import is_consonant_or_y, is_vowel
 
 def infix_word(word, infix):
     """Infix a single word with a given syllable"""
+    # pylint: disable=bad-continuation
     previous = ""
     new_word = ""
 

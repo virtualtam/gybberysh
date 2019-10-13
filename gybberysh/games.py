@@ -61,7 +61,7 @@ def upsidown(text):
             if char == ch1:
                 upchar = ch2
                 break
-            elif char == ch2:
+            if char == ch2:
                 upchar = ch1
                 break
 
