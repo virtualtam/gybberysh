@@ -36,6 +36,7 @@ setup(
     packages=find_packages(exclude=["tests.*", "tests"]),
     entry_points={
         "console_scripts": [
+            "bofh = gybberysh.bofh:main",
             "gibberish = gybberysh.games:gibberish_entrypoint",
             "infix = gybberysh.games:generic_infix_entrypoint",
             "javanais = gybberysh.games:javanais_entrypoint",
