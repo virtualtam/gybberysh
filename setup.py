@@ -43,6 +43,7 @@ setup(
             "upsidown = gybberysh.games:upsidown_entrypoint",
             "oppish = gybberysh.games:oppish_entrypoint",
             "piglatin = gybberysh.pig_latin:pig_latin_entrypoint",
+            "swspoiler = gybberysh.sw_spoiler:main",
         ]
     },
     install_requires=[],
