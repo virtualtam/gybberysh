@@ -25,6 +25,6 @@ def test_public_bofh():
     adjective, noun1, noun2, level = excuse
 
     assert adjective in ADJECTIVE
-    assert noun1 in NOUN_1
-    assert noun2 in NOUN_2
+    assert noun1 in [n.lower() for n in NOUN_1]
+    assert noun2 in [n.lower() for n in NOUN_2]
     assert level in LEVEL
